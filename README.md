@@ -1,12 +1,9 @@
-# regexp
-Some regexp examples from learning/courses
+# REGEXP!
 
 # Some general things:
 
 ```|``` = OR , example "baboons|gorillas"
-
 ```[ab]``` = "a" or "b" character, example "con[sc]en[sc]us" will match all of these: consensus, concensus, consencus, concencus
-
 ```[^ab]``` = not "a" and not "b", example "[^cat]" will not match any of these: c,a,t
 
 ```.``` = single character wildcard
@@ -30,20 +27,22 @@ Example ```\d\s\w\w\w\w\w\w\w``` matches a digit character, followed by a whites
 
 
 
-Negated shorthand classes:
-"\W" , "\D" and "\S"
+# Negated shorthand classes:
+```\W``` , ```\D``` and ```\S```
 
-Grouping:
-Grouping to the rescue! Grouping, denoted with the open parenthesis ( and the closing parenthesis ), 
-lets us group parts of a regular expression together, and allows us to limit alternation to part of the regex
-Example "I love (baboons|gorillas)" will match the text "I love" and then match either "baboons" or "gorillas".
 
-Fixed quantifier:
+# Grouping:
+Grouping, denoted with the open parenthesis ( and the closing parenthesis ), lets us group parts of a regular expression together, and allows us to limit alternation to part of the regex.
+
+Example ```I love (baboons|gorillas)``` will match the text "I love" and then match either "baboons" or "gorillas".
+
+
+# Fixed quantifier:
 Fixed quantifiers, denoted with curly braces {}, let us indicate the exact quantity of a character we wish to match, or allow us to provide a quantity range to match on.
 Examples:
-"\w{3}" will match exactly 3 word characters.
-"\w{4,7}" will match at minimum 4 word characters and at maximum 7 word characters.
-"roa{3}r" will match the characters "ro" followed by 3 "a"s, and then the character "r".
+```\w{3}``` will match exactly 3 word characters.
+```\w{4,7}``` will match at minimum 4 word characters and at maximum 7 word characters.
+```roa{3}r``` will match the characters "ro" followed by 3 "a"s, and then the character "r".
 
 Optional quantifiers:
 Optional quantifiers, indicated by the question mark ?, allow us to indicate a character in a regex is optional, or can appear either 0 times or 1 time.
