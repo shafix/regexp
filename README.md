@@ -1,7 +1,7 @@
 # regexp
 Some regexp examples from learning/courses
 
-h2. Some general things:
+# Some general things:
 
 ```|``` = OR , example "baboons|gorillas"
 
@@ -19,11 +19,15 @@ h2. Some general things:
 
 
 
-Shorthand character classes:
-"\w" - "word character", same as "[A-Za-z0-9_]", matches a single uppercase character, lowercase character, digit or underscore
-"\d" - "digit character", same as "[0-9]", matches a single digit character
-"\s" - "whitespace character", same as "[ \t\r\n\f\v]", matching a single space, tab, carriage return, line break, form feed, or vertical tab
-Example "\d\s\w\w\w\w\w\w\w" matches a digit character, followed by a whitespace character, followed by 7 word characters, like "3 monkeys".
+# Shorthand character classes:
+```\w``` - "word character", same as ```[A-Za-z0-9_]```, matches a single uppercase character, lowercase character, digit or underscore
+
+```\d``` - "digit character", same as ```[0-9]```, matches a single digit character
+
+```\s``` - "whitespace character", same as ```[ \t\r\n\f\v]```, matching a single space, tab, carriage return, line break, form feed, or vertical tab
+
+Example ```\d\s\w\w\w\w\w\w\w``` matches a digit character, followed by a whitespace character, followed by 7 word characters, like "3 monkeys".
+
 
 
 Negated shorthand classes:
