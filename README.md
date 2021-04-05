@@ -3,18 +3,27 @@ Some regexp examples from learning/courses
 
 Regepx:
 "|" = OR , example "baboons|gorillas"
+
 "[ab]" = "a" or "b" character, example "con[sc]en[sc]us" will match all of these: consensus, concensus, consencus, concencus
+
 "[^ab]" = not "a" and not "b", example "[^cat]" will not match any of these: c,a,t
+
 "." = single character wildcard
+
 "/." = matching an actual "." character
+
 "[a-z]" = range of characters from a to z, example "I adopted [2-9] [b-h]ats"
+
 "[A-Za-z]" = range of any alphabetical character A-Z or a-z
+
+
 
 Shorthand character classes:
 "\w" - "word character", same as "[A-Za-z0-9_]", matches a single uppercase character, lowercase character, digit or underscore
 "\d" - "digit character", same as "[0-9]", matches a single digit character
 "\s" - "whitespace character", same as "[ \t\r\n\f\v]", matching a single space, tab, carriage return, line break, form feed, or vertical tab
 Example "\d\s\w\w\w\w\w\w\w" matches a digit character, followed by a whitespace character, followed by 7 word characters, like "3 monkeys".
+
 
 Negated shorthand classes:
 "\W" , "\D" and "\S"
