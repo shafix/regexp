@@ -54,4 +54,3 @@ Example:
 The ^ ensures that the matched text begins with Monkeys, and the $ ensures the matched text ends with enemy
 "My spider monkey has \$10\^6 in the bank" will completely match the text "My spider monkey has $10^6 in the bank"
 
-
