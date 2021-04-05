@@ -1,20 +1,21 @@
 # regexp
 Some regexp examples from learning/courses
 
-Regepx:
-"|" = OR , example "baboons|gorillas"
+h2. Some general things:
 
-"[ab]" = "a" or "b" character, example "con[sc]en[sc]us" will match all of these: consensus, concensus, consencus, concencus
+```|``` = OR , example "baboons|gorillas"
 
-"[^ab]" = not "a" and not "b", example "[^cat]" will not match any of these: c,a,t
+```[ab]``` = "a" or "b" character, example "con[sc]en[sc]us" will match all of these: consensus, concensus, consencus, concencus
 
-"." = single character wildcard
+```[^ab]``` = not "a" and not "b", example "[^cat]" will not match any of these: c,a,t
 
-"/." = matching an actual "." character
+```.``` = single character wildcard
 
-"[a-z]" = range of characters from a to z, example "I adopted [2-9] [b-h]ats"
+```/.``` = matching an actual "." character
 
-"[A-Za-z]" = range of any alphabetical character A-Z or a-z
+```[a-z]``` = range of characters from a to z, example "I adopted [2-9] [b-h]ats"
+
+```[A-Za-z]``` = range of any alphabetical character A-Z or a-z
 
 
 
